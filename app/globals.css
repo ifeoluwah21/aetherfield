@@ -145,10 +145,10 @@
   }
 
   h1 {
-    @apply font-source-serif-pro text-[80px] leading-[100%] font-normal -tracking-[4%];
+    @apply font-source-serif-pro text-[36px] leading-[100%] font-normal -tracking-[4%] md:text-[64px] xl:text-[80px];
   }
   h2 {
-    @apply font-radio-canada-big text-[80px] leading-[100%] font-normal -tracking-[5%];
+    @apply font-radio-canada-big text-[36px] leading-[100%] font-normal -tracking-[2%] md:text-[64px] md:-tracking-[3%] xl:text-[80px] xl:-tracking-[5%];
   }
   h3 {
     @apply font-radio-canada-big text-[56px] leading-[100%] font-medium -tracking-[3%];
