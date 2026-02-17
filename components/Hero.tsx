@@ -4,7 +4,7 @@ import { Button } from "./ui/button";
 
 const Hero: FC = () => {
   return (
-    <section className="flex flex-col items-center px-5 pt-30">
+    <section className="flex flex-col items-center px-5 pt-30 md:pt-35">
       <div className="flex flex-col items-center gap-8">
         <div className="flex flex-col items-center gap-2">
           <h1 className="">Sustainability insights,</h1>
