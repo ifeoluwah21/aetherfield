@@ -11,7 +11,7 @@ const Navigation: FC = () => {
 
   return (
     <div
-      className={`sticky z-10 flex items-center justify-between px-5 py-5 transition-colors duration-75 ease-linear ${isMenuOpen ? "bg-white" : ""} `}
+      className={`sticky z-10 mx-auto flex max-w-7xl items-center justify-between px-5 py-5 transition-colors duration-75 ease-linear ${isMenuOpen ? "bg-white" : ""} `}
     >
       <Image src={"/Logo.svg"} width={122} height={20} alt="Aetherfield logo" />
       <Button
