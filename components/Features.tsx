@@ -6,7 +6,7 @@ import energyConsumption from "../public/Image.svg";
 
 const Features: FC = () => {
   return (
-    <section className="flex w-full flex-col gap-6 px-5 py-10">
+    <section className="mx-auto flex w-full max-w-7xl flex-col gap-6 px-5 py-10 md:gap-10">
       <h3 className="font-radio-canada-big mx-auto max-w-153 text-center text-2xl font-medium -tracking-[0.72px] md:text-[32px] md:-tracking-[0.96px] xl:text-[40px] xl:-tracking-[1.2px]">
         Everything you need to measure, model, and act on sustainability
       </h3>
@@ -75,7 +75,7 @@ const Features: FC = () => {
               </p>
             </article>
           </div>
-          <Button className="h-auto self-start rounded-none p-4 font-mono text-[14px] leading-[100%] font-medium">
+          <Button className="h-auto rounded-none p-4 font-mono text-[14px] leading-[100%] font-medium xl:self-start">
             Explore features
           </Button>
         </div>
