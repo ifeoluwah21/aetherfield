@@ -5,7 +5,7 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen w-full flex-col items-center justify-between bg-white">
+    <main className="flex w-full grow flex-col items-center justify-between bg-white">
       <Header />
       <Features />
       <section className="relative flex w-full flex-col gap-8 bg-[url(/footer-image.svg)] bg-cover bg-no-repeat px-5 py-10 md:gap-10 md:py-20 xl:py-30">
@@ -118,7 +118,7 @@ export default function Home() {
         <div className="divide-theme-200 border-theme-200 mx-auto flex max-w-155 flex-col gap-6 divide-y border-t">
           <article className="flex flex-col gap-4 py-6 md:flex-row">
             <Image
-              src={"/journal-1.svg"}
+              src={"/floating-fabric-blue-sky.svg"}
               width={335}
               height={203}
               alt="Sheer white fabric billowing gently in a bright blue sky"
@@ -137,7 +137,7 @@ export default function Home() {
           </article>
           <article className="flex flex-col gap-4 py-6 md:flex-row">
             <Image
-              src={"/journal-2.svg"}
+              src={"/ferns-mossy-rock-closeup.svg"}
               width={335}
               height={203}
               alt="Sheer white fabric billowing gently in a bright blue sky"
@@ -157,7 +157,7 @@ export default function Home() {
           </article>
           <article className="flex flex-col gap-4 py-6 md:flex-row">
             <Image
-              src={"/journal-3.svg"}
+              src={"/blue-glacier-texture-swirls.svg"}
               width={335}
               height={203}
               alt="Sheer white fabric billowing gently in a bright blue sky"
