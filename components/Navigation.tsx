@@ -39,10 +39,10 @@ const Navigation: FC = () => {
             <Link href="/journal">Journal</Link>
           </li>
           <li>
-            <Link href="/">About</Link>
+            <Link href="/about">About</Link>
           </li>
           <li>
-            <Link href="/">Careers</Link>
+            <Link href="/careers">Careers</Link>
           </li>
           <li>
             <Link href="/">Get started</Link>
