@@ -1,4 +1,6 @@
+"use client";
 import Image from "next/image";
+import { useRouter } from "next/navigation";
 import type { FC } from "react";
 
 type JournalCardProps = {
@@ -8,6 +10,7 @@ type JournalCardProps = {
   category: string;
   time_to_read: string;
   description: string;
+  slug: string;
 };
 
 const JournalCard: FC<JournalCardProps> = ({
@@ -17,9 +20,16 @@ const JournalCard: FC<JournalCardProps> = ({
   category,
   time_to_read,
   description,
+  slug,
 }) => {
+  const router = useRouter();
   return (
-    <article className="flex flex-col gap-5">
+    <article
+      onClick={() => {
+        router.push(`/journal/${slug}`);
+      }}
+      className="flex flex-col gap-5 hover:cursor-pointer"
+    >
       <div className="aspect-[1.72] w-full overflow-y-hidden">
         <Image
           src={thumbnail_src}

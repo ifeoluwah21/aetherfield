@@ -27,10 +27,10 @@ const JobDetailsPage: FC<{ params: Promise<{ jobId: string }> }> = async ({
       </Link>
       <section className="mx-auto flex max-w-205 flex-col gap-8 rounded-3xl bg-white p-6 pb-8 md:gap-12 md:p-10 md:pb-10">
         <JobRoleCard
-          title={jobRoles[0].title}
-          location={jobRoles[0].location}
-          role_type={jobRoles[0].role_type}
-          short_description={jobRoles[0].short_description}
+          title={jobRole.title}
+          location={jobRole.location}
+          role_type={jobRole.role_type}
+          short_description={jobRole.short_description}
         />
         <div className="border-t-theme-200 flex flex-col gap-10 border-t border-b py-8 md:py-12">
           <JobDescription>

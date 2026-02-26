@@ -66,7 +66,7 @@ const Navigation: FC = () => {
           <li>
             {" "}
             <Link
-              href={"/"}
+              href={"/journal"}
               className="font-radio-canada-big block py-6 text-[40px] font-medium"
             >
               Journal
@@ -74,7 +74,7 @@ const Navigation: FC = () => {
           </li>
           <li>
             <Link
-              href={"/"}
+              href={"/about"}
               className="font-radio-canada-big block py-6 text-[40px] font-medium"
             >
               About
@@ -82,7 +82,7 @@ const Navigation: FC = () => {
           </li>
           <li>
             <Link
-              href={"/"}
+              href={"/careers"}
               className="font-radio-canada-big block py-6 text-[40px] font-medium"
             >
               Careers

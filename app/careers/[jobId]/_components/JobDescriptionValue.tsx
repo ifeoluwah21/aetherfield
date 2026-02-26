@@ -20,12 +20,7 @@ const JobDescriptionValue: FC<{ jobDescription: JobDescriptionValue }> = ({
   if (!jobDescription.isList) {
     content = (
       <p className="font-source-serif-pro text-[18px] leading-relaxed font-normal -tracking-[0.54px] md:text-[20px] md:-tracking-[0.8px]">
-        At Aetherfield, we build software that empowers companies to lead with
-        climate accountability. Our platform helps sustainability and operations
-        teams make sense of complex environmental data—transforming emissions,
-        waste, and energy metrics into measurable, meaningful action. We’re a
-        mission-driven team of technologists, designers, and scientists working
-        to accelerate the shift toward a low-carbon future.
+        {jobDescription.value}
       </p>
     );
   } else {

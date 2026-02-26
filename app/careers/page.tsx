@@ -18,13 +18,17 @@ const AboutPage: FC = () => {
         <div className="mx-auto flex w-full max-w-205 flex-col gap-4">
           <div className="flex flex-col gap-4">
             {jobRoles.map(
-              ({ title, short_description, location, role_type }, index) => (
+              (
+                { title, short_description, location, role_type, slug },
+                index,
+              ) => (
                 <JobRoleCard
                   key={`${title}-${index}`}
                   title={title}
                   short_description={short_description}
                   location={location}
                   role_type={role_type}
+                  slug={slug}
                 />
               ),
             )}

@@ -23,6 +23,7 @@ const page: FC = () => {
                 thumbnail_src={journal.article_thumbnail.src}
                 description={journal.description}
                 time_to_read={journal.time_to_read}
+                slug={journal.slug}
               />
             ))}
           </div>

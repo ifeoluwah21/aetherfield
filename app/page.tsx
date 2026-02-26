@@ -22,7 +22,7 @@ export default function Home() {
           <article className="flex flex-col gap-6 rounded-3xl bg-white p-10">
             <figure>
               <Image
-                src={"/Type=Pie chart.svg"}
+                src={"/Type-Pie chart.svg"}
                 width={42}
                 height={42}
                 alt="clarity symbol"
@@ -41,7 +41,7 @@ export default function Home() {
           <article className="flex flex-col gap-6 rounded-3xl bg-white p-10">
             <figure>
               <Image
-                src={"/Type=System.svg"}
+                src={"/Type-System.svg"}
                 width={42}
                 height={42}
                 alt="clarity symbol"
@@ -60,7 +60,7 @@ export default function Home() {
           <article className="flex flex-col gap-6 rounded-3xl bg-white p-10">
             <figure>
               <Image
-                src={"/Type=Up.svg"}
+                src={"/Type-Up.svg"}
                 width={42}
                 height={42}
                 alt="clarity symbol"

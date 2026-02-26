@@ -10,6 +10,7 @@ type Journal = {
   article_thumbnail: { src: string; alt: string };
   description: string;
   slug: string;
+  article_into: string;
   article_content: ArticleContent[];
 };
 
@@ -26,6 +27,7 @@ export const journals: Journal[] = [
     slug: `how-to-build-a-climate-ready-data-stack`,
     author: "Lana Terra",
     category: "Insights",
+    article_into: `Climate action is only as strong as the data that informs it. But most data stacks weren’t designed with emissions, supply chains, or climate modeling in mind. Teams are often stuck retrofitting existing systems or relying on brittle workarounds to generate insights. It’s time to rethink our infrastructure—starting with the foundation.`,
     time_to_read: "4 mins",
     article_thumbnail: {
       src: fabric_blue_sky,
@@ -59,10 +61,11 @@ export const journals: Journal[] = [
   },
   {
     title: "Sustainability Isn’t a Side Project: Making Impact Operational",
-    slug: "sustainability isnt-a-side-project-making-impact-operational",
+    slug: "sustainability-isnt-a-side-project-making-impact-operational",
     author: "Gail Force",
     category: "Strategy",
     time_to_read: "7 mins",
+    article_into: `Too often, sustainability lives on the edge of the org chart—under-resourced, reactive, and disconnected from the core business. But real impact isn’t an initiative, it’s an operating principle. From product decisions to procurement flows, we’ll explore what it takes to embed sustainability into the systems that shape everyday work.`,
     article_thumbnail: {
       src: ferns_mossy_rock_closeup,
       alt: "Close-up of moss and ferns growing on a sloped rock surface",
@@ -99,6 +102,7 @@ export const journals: Journal[] = [
     author: "Theo Retical",
     category: "Insights",
     time_to_read: "5 mins",
+    article_into: `Data is everywhere, but turning it into meaningful climate action takes more than dashboards. The Aetherfield Model is our response to the noise—a systems-based approach that connects data, decision-making, and delivery. In this piece, we break down how the model works, and why clarity beats complexity every time.`,
     article_thumbnail: {
       src: blue_glacier_texture_swirls,
       alt: "Blurred silhouette of a person with wind turbines in the background at sunset",
@@ -134,6 +138,7 @@ export const journals: Journal[] = [
     author: "Dash Bordman",
     category: "Tooling",
     time_to_read: "6 mins",
+    article_into: `The first wave of climate reporting was built in spreadsheets—manual, patchy, and often siloed. But as expectations rise, so does the need for rigor, scale, and repeatability. We’re tracing the journey from reactive carbon tracking to integrated, audit-ready systems that support real-time insight and strategic decisions.`,
     article_thumbnail: {
       src: wind_turbines_sunset_silhouette,
       alt: "Textured swirls of shimmering blue resembling ice or water patterns",
@@ -166,6 +171,7 @@ export const journals: Journal[] = [
     author: "AI Gorithm",
     category: "Tooling",
     time_to_read: "6 mins",
+    article_into: `Carbon accounting is no longer a “nice-to-have” for mission-driven organizations—it’s a strategic necessity. But while awareness has grown, clarity hasn’t always followed. Between evolving standards, patchy data, and inconsistent terminology, many teams are still unsure where to begin, what’s required, or how to do it well.Let’s clear the fog.`,
     article_thumbnail: {
       src: mountain_lake_peak_scenic,
       alt: "Jagged mountain peak reflected in a calm lake with blue sky above",
@@ -202,6 +208,7 @@ export const journals: Journal[] = [
     author: "Greta Watt",
     category: "Strategy",
     time_to_read: "4 mins",
+    article_into: `Climate strategy isn’t static—it’s dynamic, iterative, and shaped by feedback. Yet many sustainability teams operate without the tools to observe, learn, and adapt in real time. To grow sustainably, organizations need loops, not lines. Let’s explore how reflection systems can unlock smarter, faster, more resilient progress.`,
     article_thumbnail: {
       src: hand_mirror_reflection_field,
       alt: "Hand holding a mirror reflecting the sky, set against a grassy field",
