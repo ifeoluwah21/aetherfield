@@ -59,6 +59,9 @@ const Navigation: FC = () => {
             <Link
               href={"/"}
               className="font-radio-canada-big block py-6 text-[40px] font-medium"
+              onNavigate={() => {
+                setIsMenuOpen((prev) => !prev);
+              }}
             >
               Product
             </Link>
@@ -67,6 +70,9 @@ const Navigation: FC = () => {
             {" "}
             <Link
               href={"/journal"}
+              onNavigate={() => {
+                setIsMenuOpen((prev) => !prev);
+              }}
               className="font-radio-canada-big block py-6 text-[40px] font-medium"
             >
               Journal
@@ -75,6 +81,9 @@ const Navigation: FC = () => {
           <li>
             <Link
               href={"/about"}
+              onNavigate={() => {
+                setIsMenuOpen((prev) => !prev);
+              }}
               className="font-radio-canada-big block py-6 text-[40px] font-medium"
             >
               About
@@ -83,6 +92,9 @@ const Navigation: FC = () => {
           <li>
             <Link
               href={"/careers"}
+              onNavigate={() => {
+                setIsMenuOpen((prev) => !prev);
+              }}
               className="font-radio-canada-big block py-6 text-[40px] font-medium"
             >
               Careers
