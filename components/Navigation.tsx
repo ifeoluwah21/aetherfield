@@ -33,19 +33,44 @@ const Navigation: FC = () => {
       <nav aria-label="main" className="hidden md:block">
         <ul className="flex items-center gap-5">
           <li>
-            <Link href="/">Product</Link>
+            <Link
+              href="/"
+              className="transition-colors duration-100 hover:text-black/50"
+            >
+              Product
+            </Link>
           </li>
           <li>
-            <Link href="/journal">Journal</Link>
+            <Link
+              href="/journal"
+              className="transition-colors duration-100 hover:text-black/50"
+            >
+              Journal
+            </Link>
           </li>
           <li>
-            <Link href="/about">About</Link>
+            <Link
+              href="/about"
+              className="transition-colors duration-100 hover:text-black/50"
+            >
+              About
+            </Link>
           </li>
           <li>
-            <Link href="/careers">Careers</Link>
+            <Link
+              href="/careers"
+              className="transition-colors duration-100 hover:text-black/50"
+            >
+              Careers
+            </Link>
           </li>
           <li>
-            <Link href="/">Get started</Link>
+            <Link
+              href="/"
+              className="transition-colors duration-100 hover:text-black/50"
+            >
+              Get started
+            </Link>
           </li>
         </ul>
       </nav>

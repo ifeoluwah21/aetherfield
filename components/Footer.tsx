@@ -10,27 +10,42 @@ const Footer: FC = () => {
           <nav>
             <ul className="text-theme-800 flex flex-wrap items-center justify-center gap-4 md:gap-5">
               <li>
-                <Link href={"/"} className="text-[18px]">
+                <Link
+                  href={"/"}
+                  className="hover:text-theme-800/50 text-[18px] transition-colors duration-100"
+                >
                   Product
                 </Link>
               </li>
               <li>
-                <Link href={"/"} className="text-[18px]">
+                <Link
+                  href={"/"}
+                  className="hover:text-theme-800/50 text-[18px] transition-colors duration-100"
+                >
                   Journal
                 </Link>
               </li>
               <li>
-                <Link href={"/"} className="text-[18px]">
+                <Link
+                  href={"/"}
+                  className="hover:text-theme-800/50 text-[18px] transition-colors duration-100"
+                >
                   About
                 </Link>
               </li>
               <li>
-                <Link href={"/"} className="text-[18px]">
+                <Link
+                  href={"/"}
+                  className="hover:text-theme-800/50 text-[18px] transition-colors duration-100"
+                >
                   Careers
                 </Link>
               </li>
               <li>
-                <Link href={"/"} className="text-[18px]">
+                <Link
+                  href={"/"}
+                  className="hover:text-theme-800/50 text-[18px] transition-colors duration-100"
+                >
                   Get started
                 </Link>
               </li>

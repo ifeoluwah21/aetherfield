@@ -20,7 +20,7 @@ const JobDetailsPage: FC<{ params: Promise<{ jobId: string }> }> = async ({
     <main className="from-theme-400 to-theme-500 flex grow flex-col gap-6 bg-linear-to-b from-0% to-100% px-5 py-30">
       <Link
         href={"/careers"}
-        className="font-source-serif-pro flex items-center justify-center gap-2 text-[20px] leading-[120%] font-normal -tracking-[0.8px]"
+        className="font-source-serif-pro flex items-center justify-center gap-2 text-[20px] leading-[120%] font-normal -tracking-[0.8px] transition-colors duration-100 hover:text-black/50"
       >
         <MoveLeft />
         <span>Back to Careers</span>

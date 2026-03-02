@@ -8,8 +8,19 @@ import EmployeeContact from "./_components/EmployeeContact";
 const AboutPage: FC = () => {
   return (
     <main className="grow">
-      <header className="flex flex-col gap-8 md:gap-20">
-        <article className="flex flex-col gap-8 px-5 md:gap-14 md:pr-26.25 md:pl-16">
+      <header className="mx-auto flex max-w-7xl flex-col gap-8 md:gap-20 xl:flex-row">
+        <figure className="xl:flex-1">
+          <Image
+            src={"/about-hero.svg"}
+            alt={
+              "Abstracted user interface forecasting a 16% off target for 2027 emissions goal alongside an image of a mossy tree on top of a light blue gradient background"
+            }
+            height={320}
+            width={375}
+            className="w-full"
+          />
+        </figure>
+        <article className="flex flex-col gap-8 px-5 md:gap-14 md:pr-26.25 md:pl-16 xl:flex-1 xl:justify-center">
           <div className="flex flex-col gap-4">
             <h1 className="font-source-serif-pro text-theme-100 text-[18px] leading-[1.2] font-normal -tracking-[0.54px] md:text-[20px] md:-tracking-[0.8px]">
               Our mission

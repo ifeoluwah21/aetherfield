@@ -68,7 +68,7 @@ const JournalDetailPage: FC<{
             </h2>
             <Link
               href={"/journal"}
-              className="font-source-serif-pro text-[18px] leading-[1.2] font-normal -tracking-[0.54px] underline md:text-[20px] md:-tracking-[0.8px]"
+              className="font-source-serif-pro text-[18px] leading-[1.2] font-normal -tracking-[0.54px] underline transition-colors duration-100 hover:text-black/50 md:text-[20px] md:-tracking-[0.8px]"
             >
               View all articles
             </Link>
