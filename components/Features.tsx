@@ -1,16 +1,58 @@
-import React, { FC } from "react";
+"use client";
+import React, { type FC, useRef } from "react";
 import { Button } from "./ui/button";
 import Image from "next/image";
 
 import energyConsumption from "../public/Image.svg";
 
+import { gsap } from "gsap";
+import { useGSAP } from "@gsap/react";
+import { CustomEase } from "gsap/CustomEase";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+gsap.registerPlugin(useGSAP, CustomEase, ScrollTrigger);
+
 const Features: FC = () => {
+  const titleRef = useRef<HTMLHeadingElement>(null);
+  const containerRef = useRef<HTMLDivElement>(null);
+
+  useGSAP(() => {
+    gsap.defaults({
+      duration: 0.6,
+      ease: CustomEase.create("custom", "M0,0 C0,0 0,1 1,1 "),
+    });
+
+    gsap.from(titleRef.current, {
+      scrollTrigger: {
+        trigger: titleRef.current,
+        start: "top 70%",
+      },
+      y: "50px",
+      delay: 0.3,
+      autoAlpha: 0,
+    });
+    gsap.from(containerRef.current, {
+      scrollTrigger: {
+        trigger: containerRef.current,
+        start: "top 70%",
+      },
+      y: "150px",
+      autoAlpha: 0,
+      delay: "0.6",
+    });
+  });
   return (
     <section className="mx-auto flex w-full max-w-7xl flex-col gap-6 px-5 py-10 md:gap-10">
-      <h3 className="font-radio-canada-big mx-auto max-w-153 text-center text-2xl font-medium -tracking-[0.72px] md:text-[32px] md:-tracking-[0.96px] xl:text-[40px] xl:-tracking-[1.2px]">
+      <h3
+        ref={titleRef}
+        className="font-radio-canada-big invisible mx-auto max-w-153 text-center text-2xl font-medium -tracking-[0.72px] md:text-[32px] md:-tracking-[0.96px] xl:text-[40px] xl:-tracking-[1.2px]"
+      >
         Everything you need to measure, model, and act on sustainability
       </h3>
-      <div className="flex flex-col gap-6 md:gap-10 xl:flex-row">
+      <div
+        ref={containerRef}
+        className="invisible flex flex-col gap-6 md:gap-10 xl:flex-row"
+      >
         <div>
           <Image
             src={energyConsumption}
