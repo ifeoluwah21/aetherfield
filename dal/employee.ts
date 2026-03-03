@@ -1,4 +1,4 @@
-type Employee = {
+export type Employee = {
   name: string;
   job_title: string;
   email_address: string;
