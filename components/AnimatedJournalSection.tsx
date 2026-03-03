@@ -6,8 +6,9 @@ import { Button } from "./ui/button";
 import { gsap } from "gsap";
 import { useGSAP } from "@gsap/react";
 import { CustomEase } from "gsap/CustomEase";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 
-gsap.registerPlugin(useGSAP, CustomEase);
+gsap.registerPlugin(useGSAP, CustomEase, ScrollTrigger);
 const AnimatedJournalSection: FC = () => {
   const containerRef = useRef<HTMLElement>(null);
 

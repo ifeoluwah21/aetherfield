@@ -6,8 +6,9 @@ import React, { FC, useRef } from "react";
 import { gsap } from "gsap";
 import { useGSAP } from "@gsap/react";
 import { CustomEase } from "gsap/CustomEase";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 
-gsap.registerPlugin(useGSAP, CustomEase);
+gsap.registerPlugin(useGSAP, CustomEase, ScrollTrigger);
 
 const AnimatedValuesSection: FC = () => {
   const titleDivRef = useRef<HTMLDivElement>(null);
