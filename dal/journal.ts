@@ -2,7 +2,7 @@ type ArticleContent = {
   header: string;
   content: string;
 };
-type Journal = {
+export type Journal = {
   title: string;
   author: string;
   category: string;
