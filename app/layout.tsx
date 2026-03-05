@@ -6,6 +6,8 @@ import {
   Source_Serif_4,
 } from "next/font/google";
 import "./globals.css";
+import Footer from "@/components/Footer";
+import Navigation from "@/components/Navigation";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -41,9 +43,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${radioCanadaBig.variable} ${sourceSerifPro.variable} antialiased`}
+        className={`${geistSans.variable} flex min-h-dvh flex-col ${geistMono.variable} ${radioCanadaBig.variable} ${sourceSerifPro.variable} antialiased`}
       >
+        <Navigation />
         {children}
+        <Footer />
       </body>
     </html>
   );

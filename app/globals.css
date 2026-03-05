@@ -145,19 +145,19 @@
   }
 
   h1 {
-    @apply font-source-serif-pro text-[80px] leading-[100%] font-normal -tracking-[4%];
+    @apply font-source-serif-pro text-[36px] leading-[100%] font-normal -tracking-[1.44px] md:text-[64px] md:-tracking-[2.56px] xl:text-[80px] xl:-tracking-[3.2px];
   }
   h2 {
-    @apply font-radio-canada-big text-[80px] leading-[100%] font-normal -tracking-[5%];
+    @apply font-radio-canada-big text-[36px] leading-[100%] font-normal -tracking-[0.72px] md:text-[64px] md:-tracking-[1.92px] xl:text-[80px] xl:-tracking-[4px];
   }
   h3 {
-    @apply font-radio-canada-big text-[56px] leading-[100%] font-medium -tracking-[3%];
+    @apply font-radio-canada-big text-[56px] leading-[100%] font-medium -tracking-[1.68px];
   }
   h4 {
-    @apply font-radio-canada-big text-[40px] leading-[100%] font-medium -tracking-[3%];
+    @apply font-radio-canada-big text-[40px] leading-[100%] font-medium -tracking-[1.2px];
   }
   p {
-    @apply font-radio-canada-big text-[20px] leading-[100%] -tracking-[2%];
+    @apply font-radio-canada-big text-[20px] leading-[100%] -tracking-[0.4px];
   }
 
   a {
