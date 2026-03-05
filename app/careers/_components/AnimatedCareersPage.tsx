@@ -36,7 +36,7 @@ const AnimatedCareersPage: FC<CareersPageProps> = ({ jobRoles }) => {
         autoAlpha: 0,
         y: "80px",
       },
-      "+=0.2",
+      "-=0.2",
     );
   });
   return (
