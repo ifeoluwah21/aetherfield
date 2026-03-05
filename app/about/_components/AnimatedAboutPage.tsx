@@ -30,10 +30,8 @@ const AnimatedAboutPage: FC<AboutPageProps> = ({ employees }) => {
 
   useGSAP(() => {
     gsap.defaults({
-      defaults: {
-        duration: 0.6,
-        ease: CustomEase.create("custom", "M0,0 C0,0 0,1 1,1 "),
-      },
+      duration: 0.6,
+      ease: CustomEase.create("custom", "M0,0 C0,0 0,1 1,1 "),
     });
     const tl = gsap.timeline();
 
