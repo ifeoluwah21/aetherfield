@@ -15,28 +15,26 @@ const AnimatedSection: FC = () => {
   const containerRef = useRef<HTMLDivElement>(null);
 
   useGSAP(() => {
-    const tl = gsap.timeline({
-      defaults: {
-        duration: 0.6,
-        ease: CustomEase.create("custom", "M0,0 C0,0 0,1 1,1 "),
-        scrollTrigger: {
-          trigger: titleRef.current,
-          start: "top 30%",
-        },
-      },
+    gsap.defaults({
+      duration: 0.6,
+      ease: CustomEase.create("custom", "M0,0 C0,0 0,1 1,1 "),
+      delay: 0.6,
     });
 
-    tl.from(
-      titleRef.current,
-      {
+    gsap
+      .timeline()
+      .from(titleRef.current, {
         autoAlpha: 0,
         y: "50px",
-      },
-      "+=0.2",
-    ).from(containerRef.current, {
-      autoAlpha: 0,
-      y: "80px",
-    });
+      })
+      .from(
+        containerRef.current,
+        {
+          autoAlpha: 0,
+          y: "80px",
+        },
+        "-=0.4",
+      );
   });
 
   return (

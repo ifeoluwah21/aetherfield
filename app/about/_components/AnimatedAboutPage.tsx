@@ -52,7 +52,7 @@ const AnimatedAboutPage: FC<AboutPageProps> = ({ employees }) => {
       scrollTrigger: {
         trigger: titleRef.current,
         start: "top 80%",
-        toggleActions: "play none none none",
+        toggleActions: "play play play play",
       },
       autoAlpha: 0,
       y: "50px",
@@ -61,7 +61,7 @@ const AnimatedAboutPage: FC<AboutPageProps> = ({ employees }) => {
       scrollTrigger: {
         trigger: valuesRef.current,
         start: "top 80%",
-        toggleActions: "play none none none",
+        toggleActions: "play play play play",
       },
       autoAlpha: 0,
       y: "50px",
@@ -70,7 +70,7 @@ const AnimatedAboutPage: FC<AboutPageProps> = ({ employees }) => {
       scrollTrigger: {
         trigger: founderImgRef.current,
         start: "top 80%",
-        toggleActions: "play none none none",
+        toggleActions: "play play play play",
       },
       autoAlpha: 0,
       y: "80px",
@@ -79,7 +79,7 @@ const AnimatedAboutPage: FC<AboutPageProps> = ({ employees }) => {
       scrollTrigger: {
         trigger: founderStoryRef.current,
         start: "top 80%",
-        toggleActions: "play none none none",
+        toggleActions: "play play play play",
       },
       autoAlpha: 0,
       y: "80px",
@@ -88,7 +88,7 @@ const AnimatedAboutPage: FC<AboutPageProps> = ({ employees }) => {
       scrollTrigger: {
         trigger: teamTitleRef.current,
         start: "top 80%",
-        toggleActions: "play none none none",
+        toggleActions: "play play play play",
       },
       autoAlpha: 0,
       y: "80px",
@@ -97,7 +97,7 @@ const AnimatedAboutPage: FC<AboutPageProps> = ({ employees }) => {
       scrollTrigger: {
         trigger: teamListRef.current,
         start: "top 80%",
-        toggleActions: "play none none none",
+        toggleActions: "play play play play",
       },
       autoAlpha: 0,
       y: "80px",

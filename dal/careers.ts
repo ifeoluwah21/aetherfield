@@ -1,6 +1,6 @@
 import { type JobDescriptionValue } from "@/app/careers/[jobId]/_components/JobDescriptionValue";
 
-type JobRole = {
+export type JobRole = {
   title: string;
   role_type: "contract" | "part-time" | "full-time";
   location: string;

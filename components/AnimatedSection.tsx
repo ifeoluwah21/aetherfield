@@ -24,13 +24,18 @@ const AnimatedSection: FC = () => {
       scrollTrigger: {
         trigger: imgRef.current,
         start: "top 70%",
+        toggleActions: "play play play play",
       },
       y: "50px",
       autoAlpha: 0,
     });
 
     gsap.from(containerRef.current, {
-      scrollTrigger: { trigger: containerRef.current, start: "top 70%" },
+      scrollTrigger: {
+        trigger: containerRef.current,
+        start: "top 70%",
+        toggleActions: "play play play play",
+      },
       autoAlpha: 0,
       y: "50px",
     });
