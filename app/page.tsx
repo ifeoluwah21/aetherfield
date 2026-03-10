@@ -5,6 +5,7 @@ import AnimatedValuesSection from "@/components/AnimatedValuesSection";
 import Features from "@/components/Features";
 import Header from "@/components/Header";
 import { Button } from "@/components/ui/button";
+import { journals } from "@/dal/journal";
 
 export default function Home() {
   return (
@@ -13,7 +14,7 @@ export default function Home() {
       <Features />
       <AnimatedValuesSection />
       <AnimatedAboutSection />
-      <AnimatedJournalSection />
+      <AnimatedJournalSection journals={journals} />
       <AnimatedSection />
       <section className="bg-theme-300 flex w-full flex-col items-center gap-8 px-5 py-10 md:py-20 xl:py-30">
         <h3 className="font-radio-canada-big text-center text-2xl leading-[100%] font-medium -tracking-[0.72px] md:text-[32px] md:-tracking-[0.96px] xl:text-[40px] xl:-tracking-[1.2px]">
