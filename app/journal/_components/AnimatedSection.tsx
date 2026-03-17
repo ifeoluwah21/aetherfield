@@ -1,6 +1,6 @@
 "use client";
 
-import { journals } from "@/dal/journal";
+import { Journal } from "@/dal/journal";
 import React, { FC, useRef } from "react";
 import JournalCard from "./JournalCard";
 
@@ -10,7 +10,10 @@ import { CustomEase } from "gsap/CustomEase";
 
 gsap.registerPlugin(useGSAP, CustomEase);
 
-const AnimatedSection: FC = () => {
+type AnimatedSectionProps = {
+  journals: Journal[];
+};
+const AnimatedSection: FC<AnimatedSectionProps> = ({ journals }) => {
   const titleRef = useRef<HTMLHeadingElement>(null);
   const containerRef = useRef<HTMLDivElement>(null);
 
