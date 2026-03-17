@@ -1,9 +1,10 @@
 import React from "react";
 import { JobRole } from "@/dal/careers";
 import AnimatedCareersPage from "./_components/AnimatedCareersPage";
+import { BASE_API_URL } from "@/lib/utils";
 
 export default async function CareersPage() {
-  const response = await fetch("http://localhost:3000/api/careers?limit=10", {
+  const response = await fetch(`${BASE_API_URL}/api/careers?limit=10`, {
     method: "GET",
   });
   if (!response.ok) return null;
