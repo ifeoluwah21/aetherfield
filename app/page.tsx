@@ -12,7 +12,7 @@ export default async function Home() {
     method: "GET",
   });
 
-  if (!response.ok) return new Error("failed to fetch Journals");
+  if (!response.ok) return null;
 
   const journals = (await response.json()) as Journal[];
 

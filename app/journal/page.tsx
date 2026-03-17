@@ -4,12 +4,12 @@ import { Button } from "@/components/ui/button";
 import AnimatedSection from "./_components/AnimatedSection";
 import { Journal } from "@/dal/journal";
 
-const JournalPage = async () => {
+export default async function JournalPage() {
   const params = new URLSearchParams({ limit: "10", offset: "0", page: "1" });
   const response = await fetch(`http://localhost:3000/api/journals?${params}`, {
     method: "GET",
   });
-  if (!response.ok) return new Error("Failed to fetch Journals");
+  if (!response.ok) return null;
 
   const data = (await response.json()) as Journal[];
   return (
@@ -30,6 +30,4 @@ const JournalPage = async () => {
       </main>
     </>
   );
-};
-
-export default JournalPage;
+}
