@@ -5,9 +5,17 @@ import AnimatedValuesSection from "@/components/AnimatedValuesSection";
 import Features from "@/components/Features";
 import Header from "@/components/Header";
 import { Button } from "@/components/ui/button";
-import { journals } from "@/dal/journal";
+import { Journal } from "@/dal/journal";
 
-export default function Home() {
+export default async function Home() {
+  const response = await fetch("http://localhost:3000/api/journals", {
+    method: "GET",
+  });
+
+  if (!response.ok) return null;
+
+  const journals = (await response.json()) as Journal[];
+
   return (
     <main className="flex w-full grow flex-col items-center justify-between bg-white">
       <Header />
