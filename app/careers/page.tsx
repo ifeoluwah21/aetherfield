@@ -1,8 +1,8 @@
-import React, { FC } from "react";
+import React from "react";
 import { JobRole } from "@/dal/careers";
 import AnimatedCareersPage from "./_components/AnimatedCareersPage";
 
-const CareersPage: FC = async () => {
+export default async function CareersPage() {
   const response = await fetch("http://localhost:3000/api/careers?limit=10", {
     method: "GET",
   });
@@ -14,6 +14,4 @@ const CareersPage: FC = async () => {
       <AnimatedCareersPage jobRoles={data} />
     </main>
   );
-};
-
-export default CareersPage;
+}
