@@ -1,12 +1,13 @@
 import { JobRole } from "@/dal/careers";
 import { FC } from "react";
 import AnimatedJobIdPage from "./_components/AnimatedJobIdPage";
+import { BASE_API_URL } from "@/lib/utils";
 
 const JobDetailsPage: FC<{ params: Promise<{ jobId: string }> }> = async ({
   params,
 }) => {
   const { jobId } = await params;
-  const response = await fetch(`http://localhost:3000/api/careers/${jobId}`);
+  const response = await fetch(`${BASE_API_URL}/api/careers/${jobId}`);
   if (!response.ok) {
     throw new Error("Could not find the role");
   }

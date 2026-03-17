@@ -3,10 +3,11 @@ import Header from "./_components/Header";
 import { Button } from "@/components/ui/button";
 import AnimatedSection from "./_components/AnimatedSection";
 import { Journal } from "@/dal/journal";
+import { BASE_API_URL } from "@/lib/utils";
 
 export default async function JournalPage() {
   const params = new URLSearchParams({ limit: "10", offset: "0", page: "1" });
-  const response = await fetch(`http://localhost:3000/api/journals?${params}`, {
+  const response = await fetch(`${BASE_API_URL}/api/journals?${params}`, {
     method: "GET",
   });
   if (!response.ok) return null;

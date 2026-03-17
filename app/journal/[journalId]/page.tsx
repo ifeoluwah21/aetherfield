@@ -1,17 +1,15 @@
 import React, { FC } from "react";
 import { Journal, journals } from "@/dal/journal";
 import AnimatedJournalIdPage from "./_components/AnimatedJournalIdPage";
+import { BASE_API_URL } from "@/lib/utils";
 
 const JournalDetailPage: FC<{
   params: Promise<{ journalId: string }>;
 }> = async ({ params }) => {
   const { journalId } = await params;
-  const response = await fetch(
-    `http://localhost:3000/api/journals/${journalId}`,
-    {
-      method: "GET",
-    },
-  );
+  const response = await fetch(`${BASE_API_URL}/api/journals/${journalId}`, {
+    method: "GET",
+  });
 
   if (!response.ok) return null;
 

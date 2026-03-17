@@ -6,9 +6,10 @@ import Features from "@/components/Features";
 import Header from "@/components/Header";
 import { Button } from "@/components/ui/button";
 import { Journal } from "@/dal/journal";
+import { BASE_API_URL } from "@/lib/utils";
 
 export default async function Home() {
-  const response = await fetch("http://localhost:3000/api/journals", {
+  const response = await fetch(`${BASE_API_URL}/api/journals`, {
     method: "GET",
   });
 
