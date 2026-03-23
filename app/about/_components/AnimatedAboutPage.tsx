@@ -107,12 +107,12 @@ const AnimatedAboutPage: FC<AboutPageProps> = ({ employees }) => {
         <figure className="xl:flex-1">
           <Image
             ref={imgRef}
-            src={"/about-hero.svg"}
+            src={"/about-hero.png"}
             alt={
               "Abstracted user interface forecasting a 16% off target for 2027 emissions goal alongside an image of a mossy tree on top of a light blue gradient background"
             }
-            height={320}
-            width={375}
+            height={1280}
+            width={1500}
             className="invisible w-full"
           />
         </figure>
@@ -174,10 +174,10 @@ const AnimatedAboutPage: FC<AboutPageProps> = ({ employees }) => {
           <figure className="md:grow md:basis-1/2">
             <Image
               ref={founderImgRef}
-              src={"/eunji_park_edit.svg"}
+              src={"/eunji_park_edit.png"}
               alt="Stylized blue duotone portrait of a woman with long hair facing slightly backward"
-              height={378}
-              width={335}
+              height={1512}
+              width={1380}
               className="invisible h-full w-full object-cover"
             />
           </figure>

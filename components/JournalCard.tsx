@@ -1,9 +1,9 @@
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 import { useRouter } from "next/navigation";
 import React, { FC } from "react";
 
 type JournalCardProps = {
-  thumbnail_src: string;
+  thumbnail_src: StaticImageData;
   thumbnail_alt: string;
   title: string;
   category: string;
@@ -29,8 +29,8 @@ const JournalCard: FC<JournalCardProps> = ({
     >
       <Image
         src={thumbnail_src}
-        width={335}
-        height={203}
+        width={1024}
+        height={1024}
         alt={thumbnail_alt}
         className="aspect-[1.65] w-full object-cover md:w-41.25"
       />

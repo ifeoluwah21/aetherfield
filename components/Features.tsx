@@ -3,7 +3,7 @@ import React, { type FC, useRef } from "react";
 import { Button } from "./ui/button";
 import Image from "next/image";
 
-import energyConsumption from "../public/Image.svg";
+import energyConsumption from "../public/Image.png";
 
 import { gsap } from "gsap";
 import { useGSAP } from "@gsap/react";
@@ -56,8 +56,8 @@ const Features: FC = () => {
         <div>
           <Image
             src={energyConsumption}
-            width={693}
-            height={506}
+            width={1340}
+            height={968}
             className="w-full xl:w-173.25"
             alt="UI card displaying energy consumption data on a light fabric background"
           />

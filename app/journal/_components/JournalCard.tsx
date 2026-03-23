@@ -1,10 +1,10 @@
 "use client";
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 import { useRouter } from "next/navigation";
 import type { FC } from "react";
 
 type JournalCardProps = {
-  thumbnail_src: string;
+  thumbnail_src: StaticImageData;
   thumbnail_alt: string;
   title: string;
   category: string;
@@ -34,6 +34,8 @@ const JournalCard: FC<JournalCardProps> = ({
         <Image
           src={thumbnail_src}
           alt={thumbnail_alt}
+          width={1024}
+          height={1024}
           className="h-full w-full object-cover"
         />
       </div>

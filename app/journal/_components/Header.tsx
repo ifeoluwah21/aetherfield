@@ -1,7 +1,5 @@
 "use client";
 import React, { FC, useRef } from "react";
-
-import heroImg from "../../../public/journal-hero.svg";
 import Image from "next/image";
 
 import { gsap } from "gsap";
@@ -32,7 +30,9 @@ const Header: FC = () => {
     <header className="mx-auto w-full max-w-7xl px-5">
       <Image
         ref={imgRef}
-        src={heroImg}
+        src={"/journal-hero.png"}
+        width={3040}
+        height={1177}
         alt="Aetherfield Journal stamp graphic with the words tech, earth, and data around a diamond frame"
         className="invisible w-full"
       />

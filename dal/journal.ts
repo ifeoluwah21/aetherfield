@@ -7,19 +7,20 @@ export type Journal = {
   author: string;
   category: string;
   time_to_read: string;
-  article_thumbnail: { src: string; alt: string };
+  article_thumbnail: { src: StaticImageData; alt: string };
   description: string;
   slug: string;
   article_into: string;
   article_content: ArticleContent[];
 };
 
-import fabric_blue_sky from "../public/floating-fabric-blue-sky.svg";
-import ferns_mossy_rock_closeup from "../public/ferns-mossy-rock-closeup.svg";
-import blue_glacier_texture_swirls from "../public/blue-glacier-texture-swirls.svg";
-import wind_turbines_sunset_silhouette from "../public/wind-turbines-sunset-silhouette.svg";
-import mountain_lake_peak_scenic from "../public/mountain-lake-peak-scenic.svg";
-import hand_mirror_reflection_field from "../public/hand-mirror-reflection-field.svg";
+import fabric_blue_sky from "../public/floating-fabric-blue-sky.png";
+import ferns_mossy_rock_closeup from "../public/ferns-mossy-rock-closeup.png";
+import blue_glacier_texture_swirls from "../public/blue-glacier-texture-swirls.png";
+import wind_turbines_sunset_silhouette from "../public/wind-turbines-sunset-silhouette.png";
+import mountain_lake_peak_scenic from "../public/mountain-lake-peak-scenic.png";
+import hand_mirror_reflection_field from "../public/hand-mirror-reflection-field.png";
+import { StaticImageData } from "next/image";
 
 export const journals: Journal[] = [
   {

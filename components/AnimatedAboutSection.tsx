@@ -36,10 +36,10 @@ const AnimatedAboutSection: FC = () => {
         className="bg-theme-300 invisible flex flex-col gap-6 rounded-3xl p-5 md:flex-row md:gap-10"
       >
         <Image
-          src={"/Image-1.svg"}
+          src={"/Image-1.png"}
           alt="Group of colleagues greeting each other in a stylized blue duotone treatment"
-          width={498}
-          height={280}
+          width={1992}
+          height={1120}
           className="w-full"
         />
         <div className="flex flex-col gap-6 md:justify-center">
