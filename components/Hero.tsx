@@ -61,10 +61,10 @@ const Hero: FC = () => {
         className="invisible relative top-20 md:top-45.25 xl:top-57.25"
       >
         <Image
-          src={"/Hero-image.svg"}
+          src={"/Hero-image.png"}
           alt="Hero image"
-          width={960}
-          height={608}
+          width={1340}
+          height={849}
           className="max-w-83.5 md:max-w-190 xl:max-w-240"
         />
       </figure>

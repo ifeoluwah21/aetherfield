@@ -45,10 +45,10 @@ const AnimatedSection: FC = () => {
       <div className="flex flex-col gap-8 md:flex-row md:gap-4">
         <Image
           ref={imgRef}
-          src={"/Elliot Williams.svg"}
+          src={"/Elliot Williams.png"}
           alt="Stylized blue duotone portrait of a person facing the camera with arms crossed"
-          width={335}
-          height={383}
+          width={1488}
+          height={1702}
           className="invisible w-full"
         />
         <div

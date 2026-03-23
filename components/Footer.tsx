@@ -58,7 +58,7 @@ const Footer: FC = () => {
         </div>
         <figure>
           <Image
-            src={"/footer-image.svg"}
+            src={"/footer-image.png"}
             alt="decorative"
             width={760}
             height={280}

@@ -30,7 +30,7 @@ const AnimatedValuesSection: FC = () => {
     });
   });
   return (
-    <section className="relative flex w-full flex-col gap-8 bg-[url(/footer-image.svg)] bg-cover bg-no-repeat px-5 py-10 md:gap-10 md:py-20 xl:py-30">
+    <section className="relative flex w-full flex-col gap-8 bg-[url(/footer-image.png)] bg-cover bg-no-repeat px-5 py-10 md:gap-10 md:py-20 xl:py-30">
       <div className="absolute top-0 right-0 bottom-0 left-0 z-2 bg-white/85"></div>
       <div
         ref={titleDivRef}
