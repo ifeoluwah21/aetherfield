@@ -35,14 +35,16 @@ const AnimatedAboutSection: FC = () => {
         ref={articleRef}
         className="bg-theme-300 invisible flex flex-col gap-6 rounded-3xl p-5 md:flex-row md:gap-10"
       >
-        <Image
-          src={"/Image-1.png"}
-          alt="Group of colleagues greeting each other in a stylized blue duotone treatment"
-          width={1992}
-          height={1120}
-          className="w-full"
-        />
-        <div className="flex flex-col gap-6 md:justify-center">
+        <figure className="w-full flex-1">
+          <Image
+            src={"/Image-1.png"}
+            alt="Group of colleagues greeting each other in a stylized blue duotone treatment"
+            width={1992}
+            height={1120}
+            className="w-full"
+          />
+        </figure>
+        <div className="flex flex-1 flex-col gap-6 md:justify-center">
           <div className="flex flex-col gap-3 md:gap-4">
             <h4 className="font-radio-canada-big text-[18px] font-medium -tracking-[0.36px] md:text-[20px] md:-tracking-[0.4px]">
               Why Acme Inc chose Aetherfield

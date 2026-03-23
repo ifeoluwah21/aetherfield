@@ -43,17 +43,19 @@ const AnimatedSection: FC = () => {
   return (
     <section className="mx-auto flex w-full max-w-7xl flex-col gap-4 px-5 py-10 md:py-20 xl:py-30">
       <div className="flex flex-col gap-8 md:flex-row md:gap-4">
-        <Image
-          ref={imgRef}
-          src={"/Elliot Williams.png"}
-          alt="Stylized blue duotone portrait of a person facing the camera with arms crossed"
-          width={1488}
-          height={1702}
-          className="invisible w-full"
-        />
+        <figure className="w-full flex-1">
+          <Image
+            ref={imgRef}
+            src={"/Elliot Williams.png"}
+            alt="Stylized blue duotone portrait of a person facing the camera with arms crossed"
+            width={1488}
+            height={1702}
+            className="invisible w-full"
+          />
+        </figure>
         <div
           ref={containerRef}
-          className="invisible flex flex-col gap-6 md:justify-center md:gap-10 md:px-10 xl:gap-14 xl:px-26.25"
+          className="invisible flex flex-1 flex-col gap-6 md:justify-center md:gap-10 md:px-10 xl:gap-14 xl:px-26.25"
         >
           <span className="text-theme-200 text-5xl font-extrabold md:text-8xl">
             &quot;
