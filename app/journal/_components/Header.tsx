@@ -28,14 +28,16 @@ const Header: FC = () => {
 
   return (
     <header className="mx-auto w-full max-w-7xl px-5">
-      <Image
-        ref={imgRef}
-        src={"/journal-hero.png"}
-        width={3040}
-        height={1177}
-        alt="Aetherfield Journal stamp graphic with the words tech, earth, and data around a diamond frame"
-        className="invisible w-full"
-      />
+      <figure>
+        <Image
+          ref={imgRef}
+          src={"/journal-hero.png"}
+          width={1520}
+          height={589}
+          alt="Aetherfield Journal stamp graphic with the words tech, earth, and data around a diamond frame"
+          className="invisible"
+        />
+      </figure>
     </header>
   );
 };

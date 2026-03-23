@@ -58,7 +58,7 @@ const Hero: FC = () => {
       </div>
       <figure
         ref={figureRef}
-        className="invisible relative top-20 md:top-45.25 xl:top-57.25"
+        className="invisible relative top-20 overflow-hidden rounded-4xl border-2 border-black md:top-45.25 xl:top-57.25"
       >
         <Image
           src={"/Hero-image.png"}
