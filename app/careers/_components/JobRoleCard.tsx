@@ -1,7 +1,5 @@
 "use client";
-
-import { Button } from "@/components/ui/button";
-import { useRouter } from "next/navigation";
+import Link from "next/link";
 import React, { FC } from "react";
 
 type JobRoleCardProps = {
@@ -18,7 +16,6 @@ const JobRoleCard: FC<JobRoleCardProps> = ({
   short_description,
   slug,
 }) => {
-  const router = useRouter();
   return (
     <article className="flex flex-col gap-6 rounded-3xl bg-white p-6 md:flex-row md:items-start md:justify-between md:p-10">
       <div className="flex flex-col gap-4 md:gap-6">
@@ -36,14 +33,14 @@ const JobRoleCard: FC<JobRoleCardProps> = ({
           {short_description}
         </p>
       </div>
-      <Button
-        onClick={() => {
-          router.push(`/careers/${slug}`);
-        }}
-        className="h-auto w-max rounded-none bg-black p-3"
-      >
-        View role
-      </Button>
+      <div>
+        <Link
+          href={`/careers/${slug}`}
+          className="flex h-auto w-25 cursor-pointer items-center justify-center rounded-none bg-black p-3 text-white"
+        >
+          View role
+        </Link>
+      </div>
     </article>
   );
 };

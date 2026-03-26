@@ -2,7 +2,7 @@
 import { useState, type FC } from "react";
 
 import { Button } from "@/components/ui/button";
-import { Minus, Plus } from "lucide-react";
+import { Minus, MoveRight, Plus } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -67,9 +67,10 @@ const Navigation: FC = () => {
           <li>
             <Link
               href="/"
-              className="transition-colors duration-100 hover:text-black/50"
+              className="flex items-center justify-between gap-2 transition-colors duration-100 hover:text-black/50"
             >
-              Get started
+              <span>Get started</span>
+              <MoveRight />
             </Link>
           </li>
         </ul>
@@ -126,8 +127,9 @@ const Navigation: FC = () => {
             </Link>
           </li>
           <li>
-            <Button className="my-6 h-auto w-full rounded-none p-4 font-mono text-[20px] leading-[100%]">
-              Get started
+            <Button className="my-6 flex h-auto w-full items-center justify-center gap-3 rounded-none p-4 font-mono text-[20px] leading-[100%]">
+              <span>Get started</span>
+              <MoveRight />
             </Button>
           </li>
         </ul>
